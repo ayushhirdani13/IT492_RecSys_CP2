@@ -44,4 +44,4 @@ These datasets encompass reviews sourced from the [Goodreads](https://www.goodre
 
 ## Download Links
 
-- [Project Page](#) (https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/goodreads/goodreads_interactions.csv)
+- [Project Page](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/goodreads/goodreads_interactions.csv)
