@@ -1,8 +1,24 @@
-# Goodreads Book Recommendation System - CP2
+# Goodreads Book Recommendation System
 
 ## Introduction
 
-This project is a recommendation system built using datasets from the Goodreads book review website. The datasets contain reviews, user interactions, and various attributes describing the items. The recommendation system leverages this data to provide personalized book recommendations to users based on their past interactions.
+This project is a collaborative filtering-based recommendation system built using datasets from the Goodreads book review website. It utilizes user-based collaborative filtering and matrix factorization techniques to provide personalized book recommendations to users based on their past interactions.
+
+## Collaborative Filtering Recommendation System
+
+### User-based Collaborative Filtering
+
+- Utilizes user similarity to recommend items.
+- Based on the assumption that users who have interacted similarly in the past will interact similarly in the future.
+
+### Matrix Factorization
+
+- Designs the collaborative-based system using matrix factorization techniques.
+- Aims to factorize the user-item interaction matrix into lower-dimensional matrices to capture underlying patterns.
+
+## About Dataset
+
+These datasets encompass reviews sourced from the [Goodreads](https://www.goodreads.com/shelf/show/book-reviews) book review website, along with diverse attributes detailing the items. Importantly, these datasets capture various levels of user interaction, ranging from adding to a 'shelf,' providing ratings, to tracking reading progress. Here is the [Link](https://cseweb.ucsd.edu/~jmcauley/datasets.html#goodreads) to the dataset.
 
 ## Dataset Information
 
@@ -10,24 +26,22 @@ This project is a recommendation system built using datasets from the Goodreads 
 - **Users:** 808,749
 - **Interactions:** 225,394,930
 
-### Metadata
+## Group Members - RecommendoCrew
 
-- Reviews
-- Add-to-shelf, read, review actions
-- Book attributes: title, ISBN
-- Graph of similar books
+- Ayush Hirdani - 202101139
+- Sumukh Patel - 202101422
+- Takshay Makadia - 202101414
+- Akshat Prasad - 202101419
+- Arsh Jindal - 202103021
 
-### Example (Interaction Data)
+## References
 
-```json
-{
-  "user_id": "8842281e1d1347389f2ab93d60773d4d",
-  "book_id": "130580",
-  "review_id": "330f9c153c8d3347eb914c06b89c94da",
-  "isRead": true,
-  "rating": 4,
-  "date_added": "Mon Aug 01 13:41:57 -0700 2011",
-  "date_updated": "Mon Aug 01 13:42:41 -0700 2011",
-  "read_at": "Fri Jan 01 00:00:00 -0800 1988",
-  "started_at": ""
-}
+1. Dataset: [Goodreads Dataset](https://cseweb.ucsd.edu/~jmcauley/datasets.html#goodreads)
+2. Mengting Wan, Julian McAuley, "[Item Recommendation on Monotonic Behavior Chains](https://github.com/MengtingWan/mengtingwan.github.io/raw/master/paper/recsys18_mwan.pdf)", in RecSys'18. [[bibtex](https://dblp.uni-trier.de/rec/bibtex/conf/recsys/WanM18)]
+3. Mengting Wan, Rishabh Misra, Ndapa Nakashole, Julian McAuley, "[Fine-Grained Spoiler Detection from Large-Scale Review Corpora](https://github.com/MengtingWan/mengtingwan.github.io/raw/master/paper/acl19_mwan.pdf)", in ACL'19. [[bibtex](https://dblp.uni-trier.de/rec/bibtex/conf/acl/WanMNM19)]
+4. Building and Testing Recommender Systems With Surprise: [Tutorial](https://towardsdatascience.com/building-and-testing-recommender-systems-with-surprise-step-by-step-d4ba702ef80b)
+5. SKLearn Non-Negative Matrix Factorization: [Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.NMF.html#sklearn.decomposition.NMF)
+
+## Download Links
+
+- [Project Page](#) (https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/goodreads/goodreads_interactions.csv)
