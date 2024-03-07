@@ -22,9 +22,9 @@ These datasets encompass reviews sourced from the [Goodreads](https://www.goodre
 
 ## Dataset Information
 
-- **Items:** 1,561,465
-- **Users:** 808,749
-- **Interactions:** 225,394,930
+- **Items:** 2,339,816
+- **Users:** 836,434
+- **Interactions:** 112,131,204
 
 ## Group Members - RecommendoCrew
 
